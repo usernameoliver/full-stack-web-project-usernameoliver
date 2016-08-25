@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/infsci2560fa16/full-stack-web.svg?branch=master)](https://travis-ci.org/infsci2560fa16/full-stack-web)
+
 # java-getting-started
 
 A barebones Java app, which can easily be deployed to Heroku.  
