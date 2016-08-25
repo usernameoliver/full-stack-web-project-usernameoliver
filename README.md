@@ -9,7 +9,7 @@ This application support the [Getting Started with Java on Heroku](https://devce
 Make sure you have Java and Maven installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone https://github.com/heroku/java-getting-started.git
+$ git clone git@github.com:infsci2560fa16/full-stack-web.git
 $ cd java-getting-started
 $ mvn install
 $ foreman start web
