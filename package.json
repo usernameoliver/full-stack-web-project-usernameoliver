@@ -1,13 +1,40 @@
 {
   "name": "full-stack-web",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.9.1"
+  },
+
+
+
+
+    "dependencies": {
+      "grunt-cli": "0.1.13",
+      "grunt": "~0.4.5",
+      "grunt-contrib-uglify": "~0.5.0"
+    },
+
+
   "dependencies": {
-    "grunt-cli": "0.1.13"
+    "grunt-cli": "1.2.0"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-w3c-html-validation": "^0.1.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/infsci2560fa16/full-stack-web-project-usernameoliver.git"
+  },
+  "description": "[![Build Status](https://travis-ci.org/infsci2560fa16/full-stack-web.svg?branch=master)](https://travis-ci.org/infsci2560fa16/full-stack-web)",
+  "bugs": {
+    "url": "https://github.com/infsci2560fa16/full-stack-web-project-usernameoliver/issues"
+  },
+  "homepage": "https://github.com/infsci2560fa16/full-stack-web-project-usernameoliver#readme",
+  "main": "Gruntfile.js",
+
+  "author": "",
+  "license": "ISC"
 }
