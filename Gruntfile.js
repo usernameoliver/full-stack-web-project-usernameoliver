@@ -49,7 +49,12 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          '<%= distFolder %>/public/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+            expand: true,
+            cwd: 'src/main/resources',
+            src: 'public/js/**/*.js',
+            dest: "target/classes",
+            ext: '.min.js'
+          //'<%= distFolder %>/public/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
         }
       }
     },
