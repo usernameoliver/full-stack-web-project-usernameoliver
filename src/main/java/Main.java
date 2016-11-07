@@ -7,7 +7,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 import static spark.Spark.*;
-import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
 import static spark.Spark.get;
 
@@ -17,16 +16,23 @@ import spark.Response;
 import spark.Route;
 
 public class Main {
-
+    private static boolean shouldReturnHtml(Request request) {
+        String accept = request.headers("Accept");
+        return accept != null && accept.contains("text/html");
+    }
+    private static boolean shouldReturnXml(Request request) {
+        String accept = request.headers("Accept");
+        return accept != null && accept.contains("text/xml");
+    }
   public static void main(String[] args) {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
 
-    //get("/hello", (req, res) -> "Hello World");
-
+    get("/core.html", (req, res) -> "Hello World");
+    
   }
-  
-  
+
+
 
 }
