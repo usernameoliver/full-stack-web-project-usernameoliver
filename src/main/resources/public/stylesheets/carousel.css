@@ -11,6 +11,12 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+.imgSetting {
+    max-width: 100%;
+    height: auto;
+    width: 2;
+}
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;

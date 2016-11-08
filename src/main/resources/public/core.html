@@ -28,7 +28,9 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+
     <link href="./stylesheets/carousel.css" rel="stylesheet">
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -49,20 +51,17 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./signin.html">Sign In</a></li>
+                <li><a href="./signup.html">Sign Up</a></li>
               </ul>
-
-
             </div>
           </div>
         </nav>
 
       </div>
     </div>
-    <!-- Carousel
+    <!-- @Degan Hao 11/08/2016 added upload button
        ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -73,12 +72,21 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <h1>Try it out to see what is happening</h1>
+
+                <div class="row">
+                <div class="custom-file-upload col-lg-7">
+            <!--<label for="file">File: </label>-->
+                    <input type="file" id="file" name="myfiles[]" multiple />
+                </div>
+                <div class="col-lg-15">
+                    <a class="btn btn-default" href="#" role="button">Upload Your File &raquo;
+                    </a>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
             </div>
           </div>
         </div>
@@ -112,7 +120,11 @@
         <span class="sr-only">Next</span>
       </a>
     </div><!-- /.carousel -->
-
+    <div >
+        <div class="container">
+            <img src="./img/pitt.jpg" alt="Norway" width="1000" height="300" >
+        </div>
+    </div>
 
 
 
@@ -120,53 +132,7 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>What is happening</h2>
-          <p></p>
-          <p><a class="btn btn-default" href="#" role="button">Upload Your Document &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
+    <div>
 
       <!-- FOOTER -->
       <footer>
@@ -175,6 +141,7 @@
       </footer>
 
     </div><!-- /.container -->
+
 
 
     <!-- Bootstrap core JavaScript
