@@ -29,7 +29,7 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
 
-    //get("/", (req, res) -> "Hello World");
+    get("/", (req, res) -> "Hello World");
     
   }
 
