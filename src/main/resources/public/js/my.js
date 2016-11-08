@@ -1,5 +1,5 @@
 fs.stat('foo.txt', function(err, stat) {
-    if(err == null) {
+    if(err === null) {
         console.log('File exists');
     } else if(err.code == 'ENOENT') {
         // file does not exist
