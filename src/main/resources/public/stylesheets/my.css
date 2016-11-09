@@ -6,8 +6,8 @@ body {
 */
 .containerOfTwoInOneLine{ width:100%; }
 
-.align-leftInOneLine{ float: left;width:50%; }
-.align-rightInOneLine{float: right;width:50%}
+.align-leftInOneLine{ float: left;width:30%; }
+.align-rightInOneLine{float: right;width:30%}
 
 .align-leftInUpRightCorner{ float: left;width:50%; }
 .align-rightUpRightCorner{
