@@ -20,7 +20,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="./js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./js/ie-emulation-modes-warning.js"></script>
-      <script src="./js/my.js"></script>
+
 
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,6 +31,8 @@
     <!-- Custom styles for this template -->
 
     <link href="./stylesheets/carousel.css" rel="stylesheet">
+    <script src="./js/my.js"></script>
+    <link href="./stylesheets/my.css" rel="stylesheet">
 
   </head>
 <!-- NAVBAR
@@ -65,66 +67,40 @@
     <!-- @Degan Hao 11/08/2016 added upload button
        ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <div class="container">
+          <div id="verticalTwo" class="container">
             <div class="carousel-caption">
+              <div >
                 <h1>Try it out to see what is happening</h1>
+              </div>
 
-                <div class="row">
-                <div class="custom-file-upload col-lg-7">
-            <!--<label for="file">File: </label>-->
+              <div class='containerOfTwoInOneLine'>
+                <div class="align-leftInOneLine">
+                  <div class="custom-file-upload col-lg-4">
+                    <!--<label for="file">File: </label>-->
                     <input type="file" id="file" name="myfiles[]" multiple />
+                  </div>
                 </div>
-                <div class="col-lg-15">
+                <div class="align-rightInOneLine">
+                  <div class="col-lg-15">
                     <a class="btn btn-default" onclick="checkFileExist()" role="button" >Use Event Sensor&raquo;
                     </a>
-                  <script src="./js/my.js"></script>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-
+                    <script src="./js/my.js"></script>
+                  </div><!-- /.col-lg-4 -->
+                </div><!-- /.right -->
+              </div><!-- container -->
             </div>
           </div>
         </div>
-        <div class="item">
 
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
 
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
     </div><!-- /.carousel -->
     <div >
-        <div class="container">
-            <img src="http://gdurl.com/NnSB" alt="Norway" width="1000" height="300" >
+        <div class="containerOfTwoInOneLine">
+            <img src="http://gdurl.com/NnSB" alt="Norway" height="500" >
         </div>
     </div>
 

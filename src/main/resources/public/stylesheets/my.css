@@ -1,0 +1,77 @@
+.containerOfTwoInOneLine{ width:100%; }
+
+.align-leftInOneLine{ float: left;width:50%; }
+.align-rightInOneLine{float: right;width:50%}
+
+.align-leftInUpRightCorner{ float: left;width:50%; }
+.align-rightUpRightCorner{
+    position: absolute;
+    right: 0px;
+    width: 20%;
+    color: #a7aaaf;
+    padding: 10px;
+
+}
+.align-leftUpRightCorner{
+    position: absolute;
+    right: 0px;
+    width: 30%;
+    color: #a7aaaf;
+    padding: 10px;
+
+}
+h100 {
+    font-size: 14px;
+}
+
+
+/*pop up borrowed from http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup ,
+    some of the parameter are customized according to my need
+*/
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 50%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: relative;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*pop up borrowed from http://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup */
