@@ -41,16 +41,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1747#1763#0" expanded="false" />
-                <element signature="e#1788#1804#0" expanded="false" />
-                <element signature="e#1968#1985#0" expanded="false" />
-                <element signature="e#3212#3219#0" expanded="false" />
-                <element signature="e#3388#3395#0" expanded="false" />
-                <element signature="e#4265#4272#0" expanded="false" />
-                <element signature="e#4444#4451#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,9 +51,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,12 +61,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#591#592#0" expanded="false" />
-                <element signature="e#644#645#0" expanded="false" />
-                <element signature="e#673#674#0" expanded="false" />
-                <element signature="e#695#696#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,23 +71,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1776#1921#0" expanded="false" />
-                <element signature="e#1920#1921#0" expanded="false" />
-                <element signature="e#2874#2882#0" expanded="false" />
-                <element signature="e#4586#4595#0" expanded="false" />
-                <element signature="e#4947#4955#0" expanded="false" />
-                <element signature="e#5072#5080#0" expanded="false" />
-                <element signature="e#7007#7015#0" expanded="false" />
-                <element signature="e#7130#7138#0" expanded="false" />
-                <element signature="e#9789#9797#0" expanded="false" />
-                <element signature="e#11865#11873#0" expanded="false" />
-                <element signature="e#12117#12118#0" expanded="false" />
-                <element signature="e#12150#12151#0" expanded="false" />
-                <element signature="e#16706#16714#0" expanded="false" />
-                <element signature="e#16740#16748#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -405,7 +373,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/edu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -765,8 +733,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43794146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -887,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,10 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#3528#3535#0" expanded="false" />
-            <element signature="e#3914#3921#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
           <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1770">
           <caret line="118" column="21" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,10 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
           <caret line="95" column="92" selection-start-line="95" selection-start-column="92" selection-end-line="95" selection-end-column="92" />
-          <folding>
-            <element signature="e#3912#3919#0" expanded="false" />
-            <element signature="e#4626#4634#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -965,95 +918,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/figer/Parsed2Tuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/extraction/NewsSpikePredict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/crawl/ReVerbExtractorWrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/crawl/ReVerbResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/cs/figer/exp/Eval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/cs/figer/analysis/feature/WordShapeFeaturizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/extraction/ReverbPhrase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/cs/figer/analysis/Preprocessing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/washington/cs/figer/analysis/MapType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/figer/Parsed2Tuple.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/extraction/NewsSpikePredict.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/crawl/ReVerbExtractorWrap.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/util/Util.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/crawl/ReVerbResult.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/cs/figer/exp/Eval.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/cs/figer/analysis/feature/WordShapeFeaturizer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/nsre/extraction/ReverbPhrase.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/cs/figer/analysis/Preprocessing.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/washington/cs/figer/analysis/MapType.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/JsonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,50 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#893#909#0" expanded="false" />
-            <element signature="e#1247#1255#0" expanded="false" />
-            <element signature="e#1571#1587#0" expanded="false" />
-            <element signature="e#2620#2621#0" expanded="false" />
-            <element signature="e#2652#2653#0" expanded="false" />
-            <element signature="e#3439#3449#0" expanded="false" />
-            <element signature="e#3555#3563#0" expanded="false" />
-            <element signature="e#3605#3613#0" expanded="false" />
-            <element signature="e#4508#4516#0" expanded="false" />
-            <element signature="e#4604#4614#0" expanded="false" />
-            <element signature="e#4748#4756#0" expanded="false" />
-            <element signature="e#5234#5259#0" expanded="false" />
-            <element signature="e#5339#5349#0" expanded="false" />
-            <element signature="e#5863#5873#0" expanded="false" />
-            <element signature="e#6053#6061#0" expanded="false" />
-            <element signature="e#6779#6789#0" expanded="false" />
-            <element signature="e#7765#7773#0" expanded="false" />
-            <element signature="e#8078#8086#0" expanded="false" />
-            <element signature="e#8135#8143#0" expanded="false" />
-            <element signature="e#8737#8747#0" expanded="false" />
-            <element signature="e#9615#9745#0" expanded="false" />
-            <element signature="e#9744#9745#0" expanded="false" />
-            <element signature="e#10006#10014#0" expanded="false" />
-            <element signature="e#10054#10062#0" expanded="false" />
-            <element signature="e#10776#10784#0" expanded="false" />
-            <element signature="e#10824#10832#0" expanded="false" />
-            <element signature="e#10882#10890#0" expanded="false" />
-            <element signature="e#11774#11782#0" expanded="false" />
-            <element signature="e#11822#11830#0" expanded="false" />
-            <element signature="e#12544#12552#0" expanded="false" />
-            <element signature="e#12592#12600#0" expanded="false" />
-            <element signature="e#12650#12658#0" expanded="false" />
-            <element signature="e#13416#13424#0" expanded="false" />
-            <element signature="e#13725#13733#0" expanded="false" />
-            <element signature="e#13783#13791#0" expanded="false" />
-            <element signature="e#14194#14204#0" expanded="false" />
-            <element signature="e#14735#14745#0" expanded="false" />
-            <element signature="e#15275#15300#0" expanded="false" />
-            <element signature="e#15793#15809#0" expanded="false" />
-            <element signature="e#15857#15865#0" expanded="false" />
-            <element signature="e#15932#15940#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,16 +980,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1747#1763#0" expanded="false" />
-            <element signature="e#1788#1804#0" expanded="false" />
-            <element signature="e#1968#1985#0" expanded="false" />
-            <element signature="e#3212#3219#0" expanded="false" />
-            <element signature="e#3388#3395#0" expanded="false" />
-            <element signature="e#4265#4272#0" expanded="false" />
-            <element signature="e#4444#4451#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,9 +988,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,12 +996,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#591#592#0" expanded="false" />
-            <element signature="e#644#645#0" expanded="false" />
-            <element signature="e#673#674#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,23 +1004,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1776#1921#0" expanded="false" />
-            <element signature="e#1920#1921#0" expanded="false" />
-            <element signature="e#2874#2882#0" expanded="false" />
-            <element signature="e#4586#4595#0" expanded="false" />
-            <element signature="e#4947#4955#0" expanded="false" />
-            <element signature="e#5072#5080#0" expanded="false" />
-            <element signature="e#7007#7015#0" expanded="false" />
-            <element signature="e#7130#7138#0" expanded="false" />
-            <element signature="e#9789#9797#0" expanded="false" />
-            <element signature="e#11865#11873#0" expanded="false" />
-            <element signature="e#12117#12118#0" expanded="false" />
-            <element signature="e#12150#12151#0" expanded="false" />
-            <element signature="e#16706#16714#0" expanded="false" />
-            <element signature="e#16740#16748#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,7 +1040,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
           <folding />
         </state>
       </provider>
