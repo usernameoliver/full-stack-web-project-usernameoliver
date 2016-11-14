@@ -1,5 +1,11 @@
 data/scale/model filter=lfs diff=lfs merge=lfs -text
 data/test filter=lfs diff=lfs merge=lfs -text
+<<<<<<< HEAD
 #lib/azure-bing-search-java-0.11.0.jar filter=lfs diff=lfs merge=lfs -text
 #lib/reverb-latest.jar filter=lfs diff=lfs merge=lfs -text
 #lib/mosek.jar filter=lfs diff=lfs merge=lfs -text
+=======
+lib/azure-bing-search-java-0.11.0.jar filter=lfs diff=lfs merge=lfs -text
+lib/reverb-latest.jar filter=lfs diff=lfs merge=lfs -text
+lib/mosek.jar filter=lfs diff=lfs merge=lfs -text
+>>>>>>> e2948ed2158f287470baa1eed146e1dc44d303d1
