@@ -6,6 +6,17 @@
   <packaging>jar</packaging>
   <artifactId>helloworld</artifactId>
 
+  <repositories>
+    <!--other repositories if any-->
+    <repository>
+      <id>project.local</id>
+      <name>project</name>
+      <url>file:${project.basedir}/repo</url>
+    </repository>
+  </repositories>
+
+
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -53,25 +64,19 @@
     </dependency>
     <!-- Must download different mosek.jar from mosek.com for different OS! -->
     <dependency>
-      <groupId>mosek</groupId>
+      <groupId>com.example</groupId>
       <artifactId>mosek</artifactId>
-      <version>osx</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/lib/mosek.jar</systemPath>
+      <version>7.0</version>
     </dependency>
     <dependency>
-      <groupId>edu.washington.knowitall</groupId>
-      <artifactId>reverb</artifactId>
-      <version>1.0.0</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/lib/reverb-latest.jar</systemPath>
+      <groupId>com.example</groupId>
+      <artifactId>reverb-latest</artifactId>
+      <version>1.0</version>
     </dependency>
     <dependency>
-      <groupId>microsoft</groupId>
-      <artifactId>azure</artifactId>
-      <version>1.0.0</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/lib/azure-bing-search-java-0.11.0.jar</systemPath>
+      <groupId>com.example</groupId>
+      <artifactId>azure-bing-search-java-0.11.0</artifactId>
+      <version>1.0</version>
     </dependency>
 
     <dependency>
