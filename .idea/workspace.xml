@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="acb66147-b803-4296-84be-766b5cd8415e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
     </list>
     <ignored path="helloworld.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,12 +37,12 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="849">
-              <caret line="1051" column="10" selection-start-line="1051" selection-start-column="10" selection-end-line="1051" selection-end-column="10" />
+              <caret line="1050" column="10" selection-start-line="1050" selection-start-column="10" selection-end-line="1050" selection-end-column="10" />
               <folding>
-                <marker date="1479431325000" expanded="true" signature="59:53861" ph="..." />
-                <marker date="1479431325000" expanded="true" signature="98:214" ph="..." />
-                <marker date="1479431325000" expanded="true" signature="192:214" ph="..." />
-                <marker date="1479431325000" expanded="true" signature="53762:53850" ph="..." />
+                <marker date="1479432215000" expanded="true" signature="59:53749" ph="..." />
+                <marker date="1479432215000" expanded="true" signature="98:214" ph="..." />
+                <marker date="1479432215000" expanded="true" signature="192:214" ph="..." />
+                <marker date="1479432215000" expanded="true" signature="53650:53738" ph="..." />
               </folding>
             </state>
           </provider>
@@ -710,7 +709,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="195" y="23" width="1763" height="1083" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -720,7 +719,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43794146" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43794146" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21266705" sideWeight="0.8284561" order="0" side_tool="false" content_ui="combo" />
@@ -1006,12 +1005,12 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="849">
-          <caret line="1051" column="10" selection-start-line="1051" selection-start-column="10" selection-end-line="1051" selection-end-column="10" />
+          <caret line="1050" column="10" selection-start-line="1050" selection-start-column="10" selection-end-line="1050" selection-end-column="10" />
           <folding>
-            <marker date="1479431325000" expanded="true" signature="59:53861" ph="..." />
-            <marker date="1479431325000" expanded="true" signature="98:214" ph="..." />
-            <marker date="1479431325000" expanded="true" signature="192:214" ph="..." />
-            <marker date="1479431325000" expanded="true" signature="53762:53850" ph="..." />
+            <marker date="1479432215000" expanded="true" signature="59:53749" ph="..." />
+            <marker date="1479432215000" expanded="true" signature="98:214" ph="..." />
+            <marker date="1479432215000" expanded="true" signature="192:214" ph="..." />
+            <marker date="1479432215000" expanded="true" signature="53650:53738" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1042,8 +1041,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
