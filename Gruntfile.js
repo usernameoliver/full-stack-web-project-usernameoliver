@@ -78,7 +78,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-w3c-html-validation');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
+  grunt.registerTask('default', ['uglify']);
   // this would be run by typing "grunt test" on the command line
   grunt.registerTask('test', ['validation', 'jshint']);
 
