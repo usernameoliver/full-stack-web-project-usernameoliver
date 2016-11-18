@@ -5,6 +5,7 @@
     "node": "6.9.1"
   },
   "dependencies": {
+    "grunt": "0.4.5",
     "grunt-cli": "1.2.0"
   },
   "devDependencies": {

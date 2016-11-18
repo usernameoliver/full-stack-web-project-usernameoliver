@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         files: {
             expand: true,
             cwd: 'src/main/resources',
-            src: 'public/js/**/*.js',
+            src: 'public/js/*.js',
             dest: "target/classes",
             ext: '.min.js'
           //'<%= distFolder %>/public/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
