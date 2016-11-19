@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acb66147-b803-4296-84be-766b5cd8415e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="helloworld.iws" />
@@ -60,11 +59,11 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="849">
-              <caret line="1141" column="10" selection-start-line="1141" selection-start-column="10" selection-end-line="1141" selection-end-column="10" />
+              <caret line="1124" column="10" selection-start-line="1124" selection-start-column="10" selection-end-line="1124" selection-end-column="10" />
               <folding>
-                <marker date="1479571773000" expanded="true" signature="59:60531" ph="..." />
-                <marker date="1479571773000" expanded="true" signature="98:192" ph="..." />
-                <marker date="1479571773000" expanded="true" signature="60432:60520" ph="..." />
+                <marker date="1479572046000" expanded="true" signature="59:59552" ph="..." />
+                <marker date="1479572046000" expanded="true" signature="98:192" ph="..." />
+                <marker date="1479572046000" expanded="true" signature="59453:59541" ph="..." />
               </folding>
             </state>
           </provider>
@@ -350,20 +349,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="full-stack-web-project-usernameoliver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloworld" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="full-stack-web-project-usernameoliver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1079,11 +1064,11 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="849">
-          <caret line="1141" column="10" selection-start-line="1141" selection-start-column="10" selection-end-line="1141" selection-end-column="10" />
+          <caret line="1124" column="10" selection-start-line="1124" selection-start-column="10" selection-end-line="1124" selection-end-column="10" />
           <folding>
-            <marker date="1479571773000" expanded="true" signature="59:60531" ph="..." />
-            <marker date="1479571773000" expanded="true" signature="98:192" ph="..." />
-            <marker date="1479571773000" expanded="true" signature="60432:60520" ph="..." />
+            <marker date="1479572046000" expanded="true" signature="59:59552" ph="..." />
+            <marker date="1479572046000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1479572046000" expanded="true" signature="59453:59541" ph="..." />
           </folding>
         </state>
       </provider>
