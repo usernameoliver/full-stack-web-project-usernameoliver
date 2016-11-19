@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acb66147-b803-4296-84be-766b5cd8415e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="helloworld.iws" />
@@ -59,11 +60,11 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="849">
-              <caret line="1124" column="10" selection-start-line="1124" selection-start-column="10" selection-end-line="1124" selection-end-column="10" />
+              <caret line="1127" column="10" selection-start-line="1127" selection-start-column="10" selection-end-line="1127" selection-end-column="10" />
               <folding>
-                <marker date="1479572046000" expanded="true" signature="59:59552" ph="..." />
-                <marker date="1479572046000" expanded="true" signature="98:192" ph="..." />
-                <marker date="1479572046000" expanded="true" signature="59453:59541" ph="..." />
+                <marker date="1479572559000" expanded="true" signature="59:59798" ph="..." />
+                <marker date="1479572559000" expanded="true" signature="98:192" ph="..." />
+                <marker date="1479572559000" expanded="true" signature="59699:59787" ph="..." />
               </folding>
             </state>
           </provider>
@@ -72,8 +73,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="133" column="38" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
+            <state relative-caret-position="279">
+              <caret line="130" column="34" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -712,7 +713,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="231" y="23" width="1837" height="1083" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -722,7 +723,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43794146" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43794146" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20389973" sideWeight="0.8284561" order="0" side_tool="false" content_ui="combo" />
@@ -1064,11 +1065,11 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="849">
-          <caret line="1124" column="10" selection-start-line="1124" selection-start-column="10" selection-end-line="1124" selection-end-column="10" />
+          <caret line="1127" column="10" selection-start-line="1127" selection-start-column="10" selection-end-line="1127" selection-end-column="10" />
           <folding>
-            <marker date="1479572046000" expanded="true" signature="59:59552" ph="..." />
-            <marker date="1479572046000" expanded="true" signature="98:192" ph="..." />
-            <marker date="1479572046000" expanded="true" signature="59453:59541" ph="..." />
+            <marker date="1479572559000" expanded="true" signature="59:59798" ph="..." />
+            <marker date="1479572559000" expanded="true" signature="98:192" ph="..." />
+            <marker date="1479572559000" expanded="true" signature="59699:59787" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1117,8 +1118,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="133" column="38" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
+        <state relative-caret-position="279">
+          <caret line="130" column="34" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
           <folding />
         </state>
       </provider>
