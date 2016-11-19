@@ -3,7 +3,7 @@
 ################################workspace
 .idea/workspace.xml
 ################################# maven
-target/
+/target/
 .env
 /target-grunt/
 
