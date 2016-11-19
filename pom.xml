@@ -116,7 +116,30 @@
     </dependency>
   </dependencies>
   <build>
+
     <plugins>
+        <plugin>
+            <artifactId>maven-clean-plugin</artifactId>
+            <version>2.5</version>
+            <executions>
+                <execution>
+                    <id>clean-jar-artifacts</id>
+                    <phase>install</phase>
+                    <goals><goal>clean</goal></goals>
+                    <configuration>
+                        <excludeDefaultDirectories>true</excludeDefaultDirectories>
+                        <filesets>
+                            <fileset>
+                                <directory>node_modules</directory>
+                            </fileset>
+                            <fileset>
+                                <directory>.heroku/node</directory>
+                            </fileset>
+                        </filesets>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -126,8 +149,10 @@
           <target>1.8</target>
           <optimize>true</optimize>
           <debug>true</debug>
+
         </configuration>
       </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
