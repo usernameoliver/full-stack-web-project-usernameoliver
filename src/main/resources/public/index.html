@@ -25,14 +25,7 @@
   <script src="./js/ie-emulation-modes-warning.js"></script>
 
 
-  <script>
-      var socket = io();
-      var el = document.getElementById('server-time');
 
-      socket.on('time', function(timeString) {
-        el.innerHTML = 'Server time: ' + timeString;
-      });
-    </script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>

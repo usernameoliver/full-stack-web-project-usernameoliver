@@ -17,7 +17,7 @@ app.post('/upload', function(req, res){
 
   // specify that we want to allow the user to upload multiple files in a single request
   form.multiples = true;
-
+  console.log("before /uploads");
   // store all uploads in the /uploads directory
   form.uploadDir = path.join(__dirname, '/uploads');
 
@@ -56,13 +56,17 @@ const PORT = process.env.PORT || 3000;
 
 
 const INDEX = path.join(__dirname, 'index.html');
-
+/*
 const server = express()
   .use(express.static(path.join(__dirname, 'src/main/resources/public')))
   .get('/', function(req, res){
     res.sendFile(path.join(__dirname, 'index.html'));
   })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
+*/
+var server = app.listen(3000, function(){
+  console.log('Server listening on 3000');
+});
 
 const io = socketIO(server);
 
