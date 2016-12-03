@@ -41,7 +41,34 @@ app.post('/upload', function(req, res){
   form.parse(req);
 
 });
-
+/*
 var server = app.listen(3000, function(){
   console.log('Server listening on 3000');
 });
+*/
+
+
+const socketIO = require('socket.io');
+
+
+const PORT = process.env.PORT || 3000;
+
+
+
+const INDEX = path.join(__dirname, 'index.html');
+
+const server = express()
+  .use(express.static(path.join(__dirname, 'src/main/resources/public')))
+  .get('/', function(req, res){
+    res.sendFile(path.join(__dirname, 'index.html'));
+  })
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
+
+const io = socketIO(server);
+
+io.on('connection', (socket) => {
+  console.log('Client connected');
+  socket.on('disconnect', () => console.log('Client disconnected'));
+});
+
+setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
