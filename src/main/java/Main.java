@@ -14,6 +14,10 @@ import com.heroku.sdk.jdbc.DatabaseUrl;
 import spark.Request;
 import spark.Response;
 import spark.Route;
+import javax.script.Invocable;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 public class Main {
     private static boolean shouldReturnHtml(Request request) {
@@ -30,6 +34,13 @@ public class Main {
     staticFileLocation("/public");
 
     get("/", (req, res) -> "Hello World");
+      try {
+          ScriptEngineManager factory = new ScriptEngineManager();
+          ScriptEngine engine = factory.getEngineByName("nashorn");
+          engine.eval("load(\""  + "app.js" + "\");");
+      } catch (Exception ex) {
+          //...
+      }
     
   }
 
