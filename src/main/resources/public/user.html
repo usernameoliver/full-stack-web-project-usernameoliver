@@ -32,6 +32,10 @@
 
       <link href="./stylesheets/my.css" rel="stylesheet">
       <script src="./js/my.js"></script>
+    <script>
+    $('#tempDiv').load("./data.txt");
+    $('#text').html($('#tempDiv').find('#theParagraphId').html());
+    </script>
 
   </head>
 
@@ -61,7 +65,22 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h2>Microsoft buy Linkedin</h2>
+
+
+        <h2 id="caseTitle">Microsoft buy Linkedin</h2>
+        <button type="button" onclick="loadDoc()">Discover what is happending</button>
+        <script>
+                function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("caseTitle").innerHTML = this.responseText;
+                  }
+                };
+                xhttp.open("GET", "./data.txt", true);
+                xhttp.send();
+        }
+        </script>
         <p>Microsoft Corp. snapped up LinkedIn Corp. for $26.2 billion in the largest acquisition in its history, betting the professional social network can rev up the tech titan’s software offerings despite recent struggles by both companies.</p>
         <div class="popup" onclick="displayDoc()">
             <p><a class="btn btn-primary btn-lg popup"  role="button">View Original Document &raquo;</a></p>
