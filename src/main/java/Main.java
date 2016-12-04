@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.ArrayList;
@@ -20,28 +21,19 @@ import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
 public class Main {
-    private static boolean shouldReturnHtml(Request request) {
-        String accept = request.headers("Accept");
-        return accept != null && accept.contains("text/html");
-    }
-    private static boolean shouldReturnXml(Request request) {
-        String accept = request.headers("Accept");
-        return accept != null && accept.contains("text/xml");
-    }
-  public static void main(String[] args) {
+
+  public static void main(String[] args) throws IOException {
 
     port(Integer.valueOf(System.getenv("PORT")));
-    staticFileLocation("/public");
+
+    ProcessBuilder pb = new ProcessBuilder("node /Users/deganhao/web/Nov13full-stack/full-stack-web-project-usernameoliver/app.js");
 
       try {
-          ScriptEngineManager factory = new ScriptEngineManager();
-          ScriptEngine engine = factory.getEngineByName("nashorn");
-          engine.eval("load(\""  + "app.js" + "\");");
-          System.out.println("loading app.js");
-      } catch (Exception ex) {
-          //...
+          Process p = pb.start();
+      } catch (IOException e) {
+          e.printStackTrace();
       }
-
+      staticFileLocation("/public");
     get("/", (req, res) -> "Hello World");
 
     
