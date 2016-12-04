@@ -10,7 +10,7 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.post('/upload', function(req, res){
+app.post('/uploads', function(req, res){
 
   // create an incoming form object
   var form = new formidable.IncomingForm();
