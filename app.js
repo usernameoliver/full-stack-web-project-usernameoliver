@@ -27,6 +27,8 @@ app.post('/upload', function(req, res){
     fs.rename(file.path, path.join(form.uploadDir, file.name));
   });
 
+
+
   // log any errors that occur
   form.on('error', function(err) {
     console.log('An error has occured: \n' + err);
@@ -41,11 +43,21 @@ app.post('/upload', function(req, res){
   form.parse(req);
 
 });
-/*
-var server = app.listen(3000, function(){
-  console.log('Server listening on 3000');
-});
-*/
+
+  //@OliverHaoprint the content of the file
+  var filePath = path.join(__dirname, 'uploads/data.txt');
+
+  fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
+      if (!err){
+      console.log('received data: ' + data);
+      }else{
+          console.log(err);
+      }
+
+  });
+
+
+  //end print
 
 
 const socketIO = require('socket.io');
