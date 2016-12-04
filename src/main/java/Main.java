@@ -38,6 +38,7 @@ public class Main {
           ScriptEngineManager factory = new ScriptEngineManager();
           ScriptEngine engine = factory.getEngineByName("nashorn");
           engine.eval("load(\""  + "app.js" + "\");");
+          System.out.println("loading app.js");
       } catch (Exception ex) {
           //...
       }
