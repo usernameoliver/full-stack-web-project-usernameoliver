@@ -32,7 +32,7 @@ public class Main {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
-      /*
+
       try {
           ScriptEngineManager factory = new ScriptEngineManager();
           ScriptEngine engine = factory.getEngineByName("nashorn");
@@ -41,7 +41,7 @@ public class Main {
       } catch (Exception ex) {
           //...
       }
-      */
+
     get("/", (req, res) -> "Hello World");
 
     
