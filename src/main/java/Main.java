@@ -1,44 +1,38 @@
-import java.io.IOException;
-import java.sql.*;
-import java.util.HashMap;
-import java.util.ArrayList;
-import java.util.Map;
+import freemarker.template.Configuration;
+import freemarker.template.TemplateExceptionHandler;
+import spark.Request;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+import java.io.File;
+import java.io.IOException;
 
 import static spark.Spark.*;
-import spark.ModelAndView;
-import static spark.Spark.get;
-
-import com.heroku.sdk.jdbc.DatabaseUrl;
-import spark.Request;
-import spark.Response;
-import spark.Route;
-import javax.script.Invocable;
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
 
 public class Main {
 
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) {
+    port(getHerokuAssignedPort());
+    get("/index", (req, res) -> {
 
-    port(Integer.valueOf(System.getenv("PORT")));
-
-    ProcessBuilder pb = new ProcessBuilder("node /Users/deganhao/web/Nov13full-stack/full-stack-web-project-usernameoliver/app.js");
-
-      try {
-          Process p = pb.start();
-      } catch (IOException e) {
-          e.printStackTrace();
+      if (shouldReturnHtml(req)) {
+        // produce HTML
+        return "hi";
+      } else {
+        // produce JSON
+        return "hello";
       }
-      staticFileLocation("/public");
-    get("/", (req, res) -> "Hello World");
-
-    
+    });
+  }
+  private static boolean shouldReturnHtml(Request request) {
+    String accept = request.headers("Accept");
+    return accept != null && accept.contains("text/html");
   }
 
-
+  static int getHerokuAssignedPort() {
+    ProcessBuilder processBuilder = new ProcessBuilder();
+    if (processBuilder.environment().get("PORT") != null) {
+      return Integer.parseInt(processBuilder.environment().get("PORT"));
+    }
+    return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+  }
 
 }

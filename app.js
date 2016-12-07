@@ -78,7 +78,7 @@ const server = express()
 */
 
 var server = app.listen(PORT, function(){
-  console.log('Server listening on 3000');
+  console.log('Server listening on ' + PORT);
 });
 
 const io = socketIO(server);
