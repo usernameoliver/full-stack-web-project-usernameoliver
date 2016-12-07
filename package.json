@@ -32,6 +32,5 @@
   "main": "Gruntfile.js",
   "author": "",
   "license": "ISC",
-  "scripts": {
-  }
+  "scripts": {}
 }
