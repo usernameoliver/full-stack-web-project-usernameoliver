@@ -28,7 +28,7 @@ mongodb.MongoClient.connect(uri, function (err, database) {
   console.log("Database connection ready");
 
   // Initialize the app.
-  require('./routes/routes.js')(app);
+  require('./routes/routes.js')(app, db);
 
 
   const socketIO = require('socket.io');

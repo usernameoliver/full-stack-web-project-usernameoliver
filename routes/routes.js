@@ -2,7 +2,7 @@ var formidable = require('formidable');
 var fs = require('fs');
 var path = require('path');
 var dir = require('node-dir');
-module.exports = function (app) {
+module.exports = function (app, db) {
 
     app.get('/', function(req, res){
       res.sendFile(path.join(__dirname, 'index.html'));
