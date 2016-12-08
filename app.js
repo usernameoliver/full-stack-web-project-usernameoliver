@@ -8,7 +8,6 @@ var bodyParser = require("body-parser");
 var mongodb = require("mongodb");
 var ObjectID = mongodb.ObjectID;
 
-var USERS_COLLECTION = "users";
 
 var app = express();
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.

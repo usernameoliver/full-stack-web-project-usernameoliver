@@ -2,6 +2,8 @@ var formidable = require('formidable');
 var fs = require('fs');
 var path = require('path');
 var dir = require('node-dir');
+var USERS_COLLECTION = "users";
+
 module.exports = function (app, db) {
 
     app.get('/', function(req, res){
@@ -16,7 +18,7 @@ module.exports = function (app, db) {
         handleError(res, "Invalid user input", "Must provide a first or last name.", 400);
       }
 
-      db.collection(CONTACTS_COLLECTION).insertOne(newContact, function(err, doc) {
+      db.collection(USERS_COLLECTION).insertOne(newContact, function(err, doc) {
         if (err) {
           handleError(res, err.message, "Failed to create new contact.");
         } else {
