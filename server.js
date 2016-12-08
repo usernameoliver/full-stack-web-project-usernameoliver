@@ -14,7 +14,17 @@ var app = express();
 var db;
 
 app.use(express.static(path.join(__dirname, './src/main/resources/public')));
-app.use(bodyParser.json());
+
+
+var bodyParser = require('body-parser')
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
+
+
 var uri = 'mongodb://heroku_9rkf070x:gg2l5l1docoqrq2ieq1ot1oqer@ds129028.mlab.com:29028/heroku_9rkf070x';
 mongodb.MongoClient.connect(uri, function (err, database) {
   if (err) {

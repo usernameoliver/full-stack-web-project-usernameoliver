@@ -4,20 +4,24 @@ var path = require('path');
 var dir = require('node-dir');
 var USERS_COLLECTION = "users";
 
+
 module.exports = function (app, db) {
 
     app.get('/', function(req, res){
       res.sendFile(path.join(__dirname, 'index.html'));
     });
 
-    app.post("/contacts", function(req, res) {
-      var newContact = req.body;
-      newContact.createDate = new Date();
 
-      if (!(req.body.firstName || req.body.lastName)) {
+
+    app.post("/new", function(req, res) {
+      var newContact = req.body;
+      console.log("this is newContact.email---------------------------------------->" + newContact.email);
+      newContact.createDate = new Date();
+/*
+      if (!(req.body.email || req.body.password)) {
         handleError(res, "Invalid user input", "Must provide a first or last name.", 400);
       }
-
+*/
       db.collection(USERS_COLLECTION).insertOne(newContact, function(err, doc) {
         if (err) {
           handleError(res, err.message, "Failed to create new contact.");
@@ -27,11 +31,12 @@ module.exports = function (app, db) {
       });
     });
 
+
     app.post('/upload', function(req, res){
 
       // create an incoming form object
       var form = new formidable.IncomingForm();
-
+      console.log("the req is " + req);
       // specify that we want to allow the user to upload multiple files in a single request
       form.multiples = true;
       console.log("before /uploads");
@@ -61,12 +66,6 @@ module.exports = function (app, db) {
 
 
         //@OliverHaoprint the content of the file
-       /* var testFolder = '/uploads/';
-        fs.readdir(testFolder, function(err, items) {
-
-            console.log(items);
-
-        });*/
 
         dir.readFiles(path.join(__dirname, '/uploads/'),
             function(err, content, next) {
@@ -79,20 +78,6 @@ module.exports = function (app, db) {
                 console.log('finished reading files:', files);
             });
 
-        /* print the content of file data.txt
-        var filePath = path.join(__dirname, 'uploads/data.txt');
-        fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
-            if (!err){
-            console.log('received data: ' + data);
-            }else{
-                console.log(err);
-            }
-
-        });
-
-
-        end print
-        */
 
     });
 
