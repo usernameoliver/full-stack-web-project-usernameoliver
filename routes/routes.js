@@ -3,6 +3,8 @@ var fs = require('fs');
 var path = require('path');
 var dir = require('node-dir');
 var USERS_COLLECTION = "users";
+var mongodb = require("mongodb");
+var ObjectID = mongodb.ObjectID;
 
 
 module.exports = function (app, db) {
@@ -10,8 +12,29 @@ module.exports = function (app, db) {
     app.get('/', function(req, res){
       res.sendFile(path.join(__dirname, 'index.html'));
     });
+    app.get('/try', function(req, res){
+          res.sendFile(path.join(__dirname, '/../src/main/resources/public/', 'core.html'));
+    });
+    app.post("/signin", function(req, res) {
+        var userEmail = req.body.email;
+        var userPassword = req.body.password;
+        console.log(userEmail);
+        db.collection(USERS_COLLECTION).findOne({ email: userEmail }, function(err, doc) {
+            if (err) {
+              handleError(res, err.message, "Failed to get contact");
+            } else {
+                if (userPassword.toString() === doc.password) {
+                    console.log('verified, should redirect to core.html');
+                    //res.render('/try');
+                    res.sendFile(path.join(__dirname, '/../src/main/resources/public/', 'core.html'));
+                }
 
-
+                else {
+                    res.send('user not found');
+                }
+            }
+          });
+    });
 
     app.post("/new", function(req, res) {
       var newContact = req.body;

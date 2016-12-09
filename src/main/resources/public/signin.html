@@ -31,34 +31,37 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="./js/my.js"></script>
-
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="./js/signin.js"></script>
   </head>
 
   <body>
+      <div class="container">
+          <h2 class="form-signin-heading">Please sign in</h2>
+          <label for="inputEmail2" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail2" class="form-control" placeholder="Email address" required autofocus>
+          <label for="inputPassword2" class="sr-only">Password</label>
+          <input type="password" id="inputPassword2" class="form-control" placeholder="Password" required autofocus>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button onclick="signIn()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+          <script>
+              $(document).ready(function(){
+                        $("button").click(function(){
+                                    var email = $('#inputEmail2').val();
+                                    var passwordClaim = $('#inputPassword2').val();
 
-    <div class="container">
+                                    alert(email);
 
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button onclick="signIn()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
-        <script src="./js/my.js"></script>
-      </form>
 
-    </div> <!-- /container -->
-    <script src="./js/nodeSimpleExample.js"></script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+                        });
+                });
+          </script>
+      </div> <!-- /container -->
+      <script src="./js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

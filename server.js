@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
 app.use(bodyParser.json())
+app.set('view engine', 'html');
 
 
 var uri = 'mongodb://heroku_9rkf070x:gg2l5l1docoqrq2ieq1ot1oqer@ds129028.mlab.com:29028/heroku_9rkf070x';
