@@ -16,7 +16,10 @@ $(document).ready(function(){
                                   console.log('upload successful!\n' + data);
                         },
                         error: function(data) {
-                            alert("does not work" + data);
+                            //alert("does not work" + data);
+                            window.location.replace("/core.html");
+
+
                         }
                  });
 
