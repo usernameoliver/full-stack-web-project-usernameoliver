@@ -5,13 +5,24 @@ $(document).ready(function(){
             var userClaim = {
                 email : emailClaim,
                 password : passwordClaim
-            }
+            };
 
                 $.ajax({
                         type: "POST",
                         data: userClaim,
                         url: "/signin",
                         dataType: 'JSON',
+                        success: function (result) {
+                                alert(result);
+                                if(result.status == 200){
+
+                                    window.location.replace("/core.html");
+                                }
+                        },
+                        error: function(result){
+                                alert("account and password mismatch");
+                        }
+                        /*
                         success: function(data){
                                   console.log('upload successful!\n' + data);
                         },
@@ -21,6 +32,7 @@ $(document).ready(function(){
 
 
                         }
+                        */
                  });
 
         });

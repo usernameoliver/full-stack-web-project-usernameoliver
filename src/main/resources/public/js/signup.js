@@ -7,18 +7,22 @@ $(document).ready(function(){
                     var newUser = {
                         email : $('#inputEmail1').val(),
                         password : $('#inputPassword1').val()
-                    }
+                    };
                     alert(newUser.email);
                     $.ajax({
                         type: "POST",
                         data: newUser,
                         url: "/new",
                         dataType: 'JSON',
-                        success: function(data){
-                                  console.log('upload successful!\n' + data);
+                        success: function (result) {
+
+                            if(result.status == 201){
+
+                                window.location.replace("/core.html");
+                            }
                         },
-                        error: function(data) {
-                            alert("does not work" + data);
+                        error: function(result){
+                            alert("account already exist");
                         }
                     });
                 }

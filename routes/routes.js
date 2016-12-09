@@ -26,7 +26,11 @@ module.exports = function (app, db) {
                 if (userPassword.toString() === doc.password) {
                     console.log('verified, should redirect to core.html');
                     //res.render('/try');
-                    res.sendFile(path.join(__dirname, '/../src/main/resources/public/', 'core.html'));
+                    var r = {
+                                status  : 200,
+                                success : 'login Successfully'
+                            }
+                    res.end(JSON.stringify(r));
                 }
 
                 else {
@@ -47,9 +51,13 @@ module.exports = function (app, db) {
 */
       db.collection(USERS_COLLECTION).insertOne(newContact, function(err, doc) {
         if (err) {
-          handleError(res, err.message, "Failed to create new contact.");
+          handleError(res, err.message, "Failed to create new user.");
         } else {
-          res.status(201).json(doc.ops[0]);
+          var r = {
+            status  : 201,
+            success : 'sign up Successfully'
+                                      }
+          res.end(JSON.stringify(r));
         }
       });
     });
