@@ -32,6 +32,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="./js/my.js"></script>
       <script src="./js/signin.js"></script>
   </head>
 
@@ -47,19 +48,9 @@
               <input type="checkbox" value="remember-me"> Remember me
             </label>
           </div>
-          <button onclick="signIn()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
+          <button onclick="signInInfo()" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
           <script>
-              $(document).ready(function(){
-                        $("button").click(function(){
-                                    var email = $('#inputEmail2').val();
-                                    var passwordClaim = $('#inputPassword2').val();
 
-                                    alert(email);
-
-
-
-                        });
-                });
           </script>
       </div> <!-- /container -->
       <script src="./js/ie10-viewport-bug-workaround.js"></script>

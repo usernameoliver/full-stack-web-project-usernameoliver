@@ -89,7 +89,12 @@ module.exports = function (app, db) {
 
       // once all the files have been uploaded, send a response to the client
       form.on('end', function() {
-        res.end('success');
+       var r2 = {
+            status  : 201,
+            success : 'Upload Successfully'
+       }
+      res.end(JSON.stringify(r2));
+
       });
 
       // parse the incoming request containing the form data
