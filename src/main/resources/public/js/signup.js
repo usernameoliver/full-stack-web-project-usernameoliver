@@ -18,7 +18,7 @@ $(document).ready(function(){
 
                             if(result.status == 201){
 
-                                window.location.replace("/core.html");
+                                window.location.replace("/signin.html");
                             }
                         },
                         error: function(result){

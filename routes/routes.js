@@ -8,6 +8,8 @@ var async = require('async');
 var ObjectID = mongodb.ObjectID;
 console.log('assign text to undefined');
 var text = undefined;
+var event = undefined;
+var eventSentence = undefined;
 
 
 module.exports = function (app, db) {
@@ -80,7 +82,7 @@ module.exports = function (app, db) {
       // every time a file has been uploaded successfully,
       // rename it to it's orignal name
 
-        function getText(callback) {
+        function getText(callback1, callback2) {
             form.on('file', function(field, file) {
                 fs.rename(file.path, path.join(form.uploadDir, file.name));
                 fs.readFile(path.join(form.uploadDir, file.name), 'utf8', function(err, data) {
@@ -88,21 +90,30 @@ module.exports = function (app, db) {
 
                   text = data;
                   console.log('in getText(), assign text to ' + text);
-                  callback();
+                  callback1(callback2);
                 });
             });
         }
-        function sendResponse() {
+
+        function sendResponse(callback) {
             console.log('in sendResponse(), text is ' + text);
+            callback();
                 var r2 = {
                       status  : 201,
                       data    : text,
+                      event   : event,
+                      eventSentence : eventSentence,
                       success : 'Upload Successfully'
                 }
                 console.log("I am sending this back: " + JSON.stringify(r2));
                 res.end(JSON.stringify(r2));
         }
-        getText(sendResponse);
+        function getEvent() {
+            event = 'hi';
+            eventSentence = 'he said hi';
+        }
+
+        getText(sendResponse, getEvent);
 
 
 
