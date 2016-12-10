@@ -29,8 +29,8 @@ $('#upload-input').on('change', function(){
       contentType: false,
       success: function (result) {
         var obj = JSON.parse(result);
-        alert(obj.data);
-        alert(result);
+
+        sessionStorage.fileContent = obj.data;
         window.location.replace("/user.html");
       },
       xhr: function() {
