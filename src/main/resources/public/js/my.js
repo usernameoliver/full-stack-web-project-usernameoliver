@@ -16,10 +16,16 @@ function displayDoc() {
 function signInInfo() {
     if(typeof(Storage) !== "undefined") {
         sessionStorage.userEmail = $('#inputEmail2').val();
-        alert("sesseion detect" + sessionStorage.userEmail);
-        //document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
     } else {
         console.log("undefined");
-        //document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
+}
+
+function getName() {
+        if (sessionStorage.userEmail) {
+          document.getElementById("welcome").innerHTML = "Welcome, " + sessionStorage.userEmail;
+        }
+        else {
+          document.getElementById("welcome").innerHTML = "Welcome, visitor" ;
+        }
 }

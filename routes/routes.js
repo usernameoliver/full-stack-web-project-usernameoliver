@@ -4,7 +4,10 @@ var path = require('path');
 var dir = require('node-dir');
 var USERS_COLLECTION = "users";
 var mongodb = require("mongodb");
+var async = require('async');
 var ObjectID = mongodb.ObjectID;
+console.log('assign text to undefined');
+var text = undefined;
 
 
 module.exports = function (app, db) {
@@ -76,9 +79,35 @@ module.exports = function (app, db) {
 
       // every time a file has been uploaded successfully,
       // rename it to it's orignal name
-      form.on('file', function(field, file) {
-        fs.rename(file.path, path.join(form.uploadDir, file.name));
-      });
+
+        function getText(callback) {
+            form.on('file', function(field, file) {
+                fs.rename(file.path, path.join(form.uploadDir, file.name));
+                fs.readFile(path.join(form.uploadDir, file.name), 'utf8', function(err, data) {
+                  if (err) throw err;
+
+                  text = data;
+                  console.log('in getText(), assign text to ' + text);
+                  callback();
+                });
+            });
+        }
+        function sendResponse() {
+            console.log('in sendResponse(), text is ' + text);
+                var r2 = {
+                      status  : 201,
+                      data    : text,
+                      success : 'Upload Successfully'
+                }
+                console.log("I am sending this back: " + JSON.stringify(r2));
+                res.end(JSON.stringify(r2));
+        }
+        getText(sendResponse);
+
+
+
+
+
 
 
 
@@ -88,19 +117,12 @@ module.exports = function (app, db) {
       });
 
       // once all the files have been uploaded, send a response to the client
-      form.on('end', function() {
-       var r2 = {
-            status  : 201,
-            success : 'Upload Successfully'
-       }
-      res.end(JSON.stringify(r2));
 
-      });
 
       // parse the incoming request containing the form data
       form.parse(req);
 
-
+/*
         //@OliverHaoprint the content of the file
 
         dir.readFiles(path.join(__dirname, '/uploads/'),
@@ -112,7 +134,8 @@ module.exports = function (app, db) {
             function(err, files){
                 if (err) throw err;
                 console.log('finished reading files:', files);
-            });
+        });
+*/
 
 
     });

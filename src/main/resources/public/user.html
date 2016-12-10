@@ -36,10 +36,11 @@
     $('#tempDiv').load("./data.txt");
     $('#text').html($('#tempDiv').find('#theParagraphId').html());
     </script>
+    <script src="./js/my.js"></script>
 
   </head>
 
-  <body>
+  <body onload="getName()">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -55,8 +56,8 @@
         <div id="navbar" class="navbar-collapse collapse">
 
           <div class='containerOfTwoInOneLine'>
-            <div class="align-leftUpRightCorner">Welcome</div>
-            <div class="align-rightUpRightCorner" id="userId">user</div><!-- /.right -->
+
+            <div class="align-rightUpRightCorner" id="welcome"></div><!-- /.right -->
           </div><!-- container -->
         </div><!--/.navbar-collapse -->
       </div>

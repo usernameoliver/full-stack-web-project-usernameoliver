@@ -28,6 +28,8 @@ $('#upload-input').on('change', function(){
       processData: false,
       contentType: false,
       success: function (result) {
+        var obj = JSON.parse(result);
+        alert(obj.data);
         alert(result);
         window.location.replace("/user.html");
       },
