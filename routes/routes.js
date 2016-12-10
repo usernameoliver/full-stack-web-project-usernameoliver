@@ -10,6 +10,7 @@ console.log('assign text to undefined');
 var text = undefined;
 var event = undefined;
 var eventSentence = undefined;
+var SummaryTool = require('node-summary');
 
 
 module.exports = function (app, db) {
@@ -109,8 +110,17 @@ module.exports = function (app, db) {
                 res.end(JSON.stringify(r2));
         }
         function getEvent() {
-            event = 'hi';
-            eventSentence = 'he said hi';
+            SummaryTool.summarize(event, text, function(err, summary) {
+                if(err) console.log("Something went wrong man!");
+                console.log("Original Length " + (text.length));
+                console.log("Summary Length " + summary.length);
+                console.log("Summary Ratio: " + (100 - (100 * (summary.length / text.length))));
+                event = ' ';
+                eventSentence = summary;
+            });
+
+
+
         }
 
         getText(sendResponse, getEvent);
