@@ -90,14 +90,14 @@ module.exports = function (app, db) {
                   if (err) throw err;
 
                   text = data;
-                  console.log('in getText(), assign text to ' + text);
+                  //console.log('in getText(), assign text to ' + text);
                   callback1(callback2);
                 });
             });
         }
 
         function sendResponse(callback) {
-            console.log('in sendResponse(), text is ' + text);
+            //console.log('in sendResponse(), text is ' + text);
             callback();
                 var r2 = {
                       status  : 201,
