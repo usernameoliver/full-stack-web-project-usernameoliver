@@ -40,6 +40,8 @@ function deleteAccount() {
 
                                     alert('successfully deleted your account');
                                     sessionStorage.userEmail = 'visitor';
+                                    sessionStorage.eventSentence = 'Empty';
+                                    sessionStorage.eventSource = 'Empty';
                                     location.reload();
                                 }
                         },
