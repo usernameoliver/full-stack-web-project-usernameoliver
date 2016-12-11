@@ -31,42 +31,81 @@
     <![endif]-->
 
       <link href="./stylesheets/my.css" rel="stylesheet">
+      <link href="./stylesheets/dropdown.css" rel="stylesheet">
+      <link href="./stylesheets/popup.css" rel="stylesheet">
       <script src="./js/my.js"></script>
-    <script>
-    $('#tempDiv').load("./data.txt");
-    $('#text').html($('#tempDiv').find('#theParagraphId').html());
-    </script>
-    <script src="./js/my.js"></script>
+
+    <script src="./js/user.js"></script>
 
   </head>
 
   <body onload="getName()">
 
+
+
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+
+            <a class="navbar-brand" href="./index.html">Home</a>
           <a class="navbar-brand" href="./core.html">Event Sensor</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 
           <div class='containerOfTwoInOneLine'>
 
-            <div class="align-rightUpRightCorner" id="welcome" onclick="changeAccount()"></div><!-- /.right -->
+            <div class="align-rightUpRightCorner" id="welcome">
+
+
+            </div><!-- /.right -->
+
           </div><!-- container -->
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">My Account</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <button id="myBtn">Change My Password</button>
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+
+                            <p>
+                                Old Password</p>
+                            <label for="inputPassword3" class="sr-only">Old Password</label>
+                            <input type="password" id="inputPassword3" class="form-control" placeholder="Password" required >
+                            <p>
+                                New Password</p>
+                            <label for="inputPassword4" class="sr-only">New Password</label>
+                            <input type="password" id="inputPassword4" class="form-control" placeholder="Password" required >
+                            <button onclick="changePassword()" class="btn btn-lg btn-primary btn-block" type="submit" >Confirm Change</button>
+                            <script src="./js/user.js"></script>
+                        </div>
+
+                    </div>
+                    <script src="./js/popup.js"></script>
+
+
+                    <button id="myHistory">View My History</button>
+                    <button id="myEmail" onclick="deleteAccount()">Disconnect My Email</button>
+                    <script src="./js/user.js"></script>
+                </div>
+            </div>
 
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
+
+
+
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
+
           <h3>Event Found: </h3>
         <p id="event"></p>
           <h3>Key Information</h3>

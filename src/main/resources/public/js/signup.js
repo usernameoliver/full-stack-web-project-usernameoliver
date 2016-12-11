@@ -8,7 +8,7 @@ $(document).ready(function(){
                         email : $('#inputEmail1').val(),
                         password : $('#inputPassword1').val()
                     };
-                    alert(newUser.email);
+                    alert(newUser.email + ', Thanks for registering Event Discovery');
                     $.ajax({
                         type: "POST",
                         data: newUser,

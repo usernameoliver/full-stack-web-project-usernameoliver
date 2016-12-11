@@ -22,6 +22,64 @@ module.exports = function (app, db) {
     app.get('/try', function(req, res){
           res.sendFile(path.join(__dirname, '/../src/main/resources/public/', 'core.html'));
     });
+
+    app.post("/deleteAccount", function(req, res) {
+            var userEmail = req.body.email;
+
+            console.log(userEmail);
+            db.collection(USERS_COLLECTION).deleteOne({ email: userEmail }, function(err, doc) {
+                        if (err) {
+                            handleError(res, err.message, "Failed to get contact");
+                        } else {
+
+                            var r = {
+                                status  : 200,
+                                success : 'Account deleted Successfully'
+                            }
+                            res.end(JSON.stringify(r));
+                        }
+            });
+    });
+    app.post("/changePassword", function(req, res) {
+            var userEmail = req.body.email;
+            var oldPassword = req.body.currentPassword;
+            var newPassword = req.body.futurePassword;
+            console.log(userEmail);
+            if (userEmail === 'visitor') {
+                res.send('visitor cannot change password, please register first');
+            } else {
+                db.collection(USERS_COLLECTION).findOne({ email: userEmail }, function(err, doc1) {
+                    if (err ) {
+                        handleError(res, err.message, "Failed to get contact");
+                    }
+                    else if (doc1.password === oldPassword.toString()) {
+                        db.collection(USERS_COLLECTION).updateOne({ email: userEmail }, {$set : { password : newPassword}}, function(err, doc) {
+                            if (err) {
+                                handleError(res, err.message, "Failed to get contact");
+                            } else {
+
+                                var r = {
+                                    status  : 200,
+                                    success : 'Password Changed Successfully'
+                                }
+                                res.end(JSON.stringify(r));
+                            }
+
+
+                        });
+                    }
+                    else {
+
+                        console.log('unable to change password due to mismatch');
+                        res.send('unable to change password');
+                    }
+
+                });
+            }
+
+
+        });
+
     app.post("/signin", function(req, res) {
         var userEmail = req.body.email;
         var userPassword = req.body.password;
@@ -31,7 +89,8 @@ module.exports = function (app, db) {
             if (err) {
               handleError(res, err.message, "Failed to get contact");
             } else {
-                if (userPassword.toString() === doc.password) {
+
+                if (doc && userPassword.toString() === doc.password) {
                     console.log('verified, should redirect to core.html');
                     //res.render('/try');
                     var r = {
@@ -143,38 +202,16 @@ module.exports = function (app, db) {
 
         getText(sendResponse, getEvent);
 
-
-
-
-
-
-
-
       // log any errors that occur
       form.on('error', function(err) {
         console.log('An error has occured: \n' + err);
       });
 
-      // once all the files have been uploaded, send a response to the client
-
 
       // parse the incoming request containing the form data
       form.parse(req);
 
-/*
-        //@OliverHaoprint the content of the file
 
-        dir.readFiles(path.join(__dirname, '/uploads/'),
-            function(err, content, next) {
-                if (err) throw err;
-                console.log('content:', content);
-                next();
-            },
-            function(err, files){
-                if (err) throw err;
-                console.log('finished reading files:', files);
-        });
-*/
 
 
     });

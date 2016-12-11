@@ -13,7 +13,7 @@ $(document).ready(function(){
                         url: "/signin",
                         dataType: 'JSON',
                         success: function (result) {
-                                alert(result);
+                                alert('Hi, nice to see you again!');
                                 if(result.status == 200){
 
                                     window.location.replace("/core.html");
