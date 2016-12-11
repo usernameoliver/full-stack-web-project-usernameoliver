@@ -106,7 +106,7 @@ module.exports = function (app, db) {
                       eventSentence : eventSentence,
                       success : 'Upload Successfully'
                 }
-                console.log("I am sending this back: " + JSON.stringify(r2));
+                //console.log("I am sending this back: " + JSON.stringify(r2));
                 res.end(JSON.stringify(r2));
         }
         function getEvent() {
