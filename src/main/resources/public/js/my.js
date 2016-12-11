@@ -32,3 +32,7 @@ function getName() {
         document.getElementById("eventSentence").innerHTML = sessionStorage.eventSentence ;
         document.getElementById("eventSource").innerHTML = sessionStorage.eventSource;
 }
+
+function changeAccount() {
+    //todo: change password or delete account by sending ajax post
+}

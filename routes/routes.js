@@ -11,6 +11,7 @@ var text = undefined;
 var event = undefined;
 var eventSentence = undefined;
 var SummaryTool = require('node-summary');
+var currentEmail = "";
 
 
 module.exports = function (app, db) {
@@ -25,6 +26,7 @@ module.exports = function (app, db) {
         var userEmail = req.body.email;
         var userPassword = req.body.password;
         console.log(userEmail);
+        currentEmail = userEmail;
         db.collection(USERS_COLLECTION).findOne({ email: userEmail }, function(err, doc) {
             if (err) {
               handleError(res, err.message, "Failed to get contact");
@@ -69,11 +71,13 @@ module.exports = function (app, db) {
     });
 
 
+
+
     app.post('/upload', function(req, res){
 
       // create an incoming form object
       var form = new formidable.IncomingForm();
-      console.log("the req is " + req);
+
       // specify that we want to allow the user to upload multiple files in a single request
       form.multiples = true;
       console.log("before /uploads");
@@ -99,15 +103,29 @@ module.exports = function (app, db) {
         function sendResponse(callback) {
             //console.log('in sendResponse(), text is ' + text);
             callback();
-                var r2 = {
-                      status  : 201,
-                      data    : text,
-                      event   : event,
-                      eventSentence : eventSentence,
-                      success : 'Upload Successfully'
-                }
+            var email = req.body.email;
+            console.log('currentEmail is ' + currentEmail);
+
+
                 //console.log("I am sending this back: " + JSON.stringify(r2));
-                res.end(JSON.stringify(r2));
+                db.collection(USERS_COLLECTION).updateOne({ email : currentEmail }, {$set : { sentence : eventSentence, source : text}}, function(err, doc) {
+                    if (err) {
+                          handleError(res, err.message, "Failed to send response");
+
+                    } else {
+                            console.log('found email' + currentEmail);
+
+                            var r2 = {
+                                  status  : 201,
+                                  data    : text,
+                                  event   : event,
+                                  eventSentence : eventSentence,
+                                  success : 'Upload Successfully'
+                            }
+                            res.end(JSON.stringify(r2));
+                        }
+                });
+
         }
         function getEvent() {
             SummaryTool.summarize(event, text, function(err, summary) {
