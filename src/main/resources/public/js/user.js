@@ -58,7 +58,6 @@ function listDoc() {
     $.getJSON(urlToSend, function(result){
         sessionStorage.eventSentence = result.sentence;
         sessionStorage.eventSource = result.source;
-        alert('retrieved my history' );
         location.reload();
     });
 }
