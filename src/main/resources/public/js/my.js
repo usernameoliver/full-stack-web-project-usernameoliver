@@ -28,7 +28,7 @@ function getName() {
         else {
           document.getElementById("welcome").innerHTML = "Welcome, visitor" ;
         }
-        document.getElementById("event").innerHTML = sessionStorage.event;
+        document.getElementById("event").innerHTML = ' ';
         document.getElementById("eventSentence").innerHTML = sessionStorage.eventSentence ;
         document.getElementById("eventSource").innerHTML = sessionStorage.eventSource;
 }
