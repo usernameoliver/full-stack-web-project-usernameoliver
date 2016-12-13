@@ -25,29 +25,40 @@ function changePassword() {
 }
 
 function deleteAccount() {
-            var emailClaim = sessionStorage.userEmail;
-            var userClaim = {
-                email : emailClaim,
-            };
-                $.ajax({
-                        type: "POST",
-                        data: userClaim,
-                        url: "/deleteAccount",
-                        dataType: 'JSON',
-                        success: function (result) {
+    var emailClaim = sessionStorage.userEmail;
+    var userClaim = {
+        email : emailClaim,
+    };
+    alert('we are sending ' + emailClaim);
+    $.ajax({
+            type: "POST",
+            data: userClaim,
+            url: "/deleteAccount",
+            dataType: 'JSON',
+            success: function (result) {
 
-                                if(result.status == 200){
+                    if(result.status == 200){
 
-                                    alert('successfully deleted your account');
-                                    sessionStorage.userEmail = 'visitor';
-                                    sessionStorage.eventSentence = 'Empty';
-                                    sessionStorage.eventSource = 'Empty';
-                                    location.reload();
-                                }
-                        },
-                        error: function(result){
-                                alert("cannot delete your account");
-                        }
-                 });
+                        alert('successfully deleted your account');
+                        sessionStorage.userEmail = 'visitor';
+                        sessionStorage.eventSentence = 'Empty';
+                        sessionStorage.eventSource = 'Empty';
+                        location.reload();
+                    }
+            },
+            error: function(result){
+                    alert("cannot delete your account");
+            }
+    });
 
+}
+function listDoc() {
+    var emailClaim = sessionStorage.userEmail;
+    var urlToSend =  '/listDoc?email=' + emailClaim;
+    $.getJSON(urlToSend, function(result){
+        sessionStorage.eventSentence = result.sentence;
+        sessionStorage.eventSource = result.source;
+        alert('retrieved my history' );
+        location.reload();
+    });
 }

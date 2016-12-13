@@ -13,8 +13,7 @@ var eventSentence = undefined;
 var SummaryTool = require('node-summary');
 var currentEmail = "";
 
-
-module.exports = function (app, db) {
+module.exports = function (app, db, bodyParser) {
 
     app.get('/', function(req, res){
       res.sendFile(path.join(__dirname, 'index.html'));
@@ -23,10 +22,49 @@ module.exports = function (app, db) {
           res.sendFile(path.join(__dirname, '/../src/main/resources/public/', 'core.html'));
     });
 
+
+    app.get("/listDoc/:id?", function(req, res) {
+          //todo: retrieve json and return it
+        var url = require('url');
+        var url_parts = url.parse(req.url, true);
+        var query = url_parts.search;
+        var userEmail = query.substring(7);
+
+
+        console.log('the user email is  ' + userEmail);
+        db.collection(USERS_COLLECTION).findOne({ email: userEmail }, function(err, doc) {
+            if (err) {
+              handleError(res, err.message, "Failed to get contact");
+            } else {
+                if (doc) {
+                    console.log('doc retrieved' + doc.sentence);
+                    var r = {
+                        status  : 200,
+                        success : 'Account deleted Successfully',
+                        sentence : doc.sentence,
+                        source  : doc.source
+                    }
+                    res.end(JSON.stringify(r));
+                }
+                else {
+                    var r = {
+                        status  : 200,
+                        success : 'Account deleted Successfully',
+                        sentence : 'Empty',
+                        source  : 'Empty'
+                    }
+                    res.end(JSON.stringify(r));
+                }
+
+
+            }
+        });
+    });
+
     app.post("/deleteAccount", function(req, res) {
             var userEmail = req.body.email;
 
-            console.log(userEmail);
+            console.log('the user Email is ' + userEmail);
             db.collection(USERS_COLLECTION).deleteOne({ email: userEmail }, function(err, doc) {
                         if (err) {
                             handleError(res, err.message, "Failed to get contact");
